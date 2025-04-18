@@ -5,9 +5,8 @@ import Services from '@/pages/Services'
 import Projects from '@/pages/Projects'
 import Testimonials from '@/pages/Testimonials'
 import Contact from '@/pages/Contact'
-//import Discord from '@/pages/Discord'
 
-function App() {
+export default function App() {
   return (
     <MainLayout>
       <Routes>
@@ -16,11 +15,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/discord" element={<Discord />} /> */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </MainLayout>
   )
 }
-
-export default App

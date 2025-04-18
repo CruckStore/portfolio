@@ -1,14 +1,17 @@
 import { ReactNode } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import '@/styles/MainLayout.scss'
 
-interface Props { children: ReactNode }
+interface Props {
+  children: ReactNode
+}
 
 export default function MainLayout({ children }: Props) {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="main-layout">
       <Header />
-      <main className="flex-grow container mx-auto px-4">
+      <main className="container content">
         {children}
       </main>
       <Footer />
