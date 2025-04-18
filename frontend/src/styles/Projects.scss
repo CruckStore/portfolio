@@ -1,0 +1,18 @@
+.projects-page {
+    padding: 3rem 0;
+  
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+  
+      .project-card {
+        padding: 1.5rem;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        text-align: center;
+      }
+    }
+  }
+  
