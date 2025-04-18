@@ -5,7 +5,7 @@ import Services from '@/pages/Services'
 import Projects from '@/pages/Projects'
 import Testimonials from '@/pages/Testimonials'
 import Contact from '@/pages/Contact'
-import Discord from '@/pages/Discord'
+//import Discord from '@/pages/Discord'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/discord" element={<Discord />} />
+        {/* <Route path="/discord" element={<Discord />} /> */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </MainLayout>
