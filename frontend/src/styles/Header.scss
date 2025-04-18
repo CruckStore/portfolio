@@ -1,0 +1,41 @@
+.site-header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
+  
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+  
+      a {
+        position: relative;
+        padding: 0.25rem 0;
+  
+        &.active::after {
+          content: '';
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #007acc;
+        }
+      }
+  
+      .discord-link {
+        font-style: italic;
+      }
+    }
+  }
+  
