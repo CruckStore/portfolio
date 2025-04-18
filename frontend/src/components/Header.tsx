@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import '@/styles/Header.scss'
 
 export default function Header() {
   const links = [
@@ -7,25 +8,32 @@ export default function Header() {
     { to: '/projects', label: 'Projects' },
     { to: '/testimonials', label: 'Testimonials' },
     { to: '/contact', label: 'Contact' },
-    //{ to: '/discord', label: 'Discord' },
   ]
 
   return (
-    <header className="bg-white shadow">
-      <div className="container mx-auto flex items-center justify-between py-4 px-4">
-        <div className="text-2xl font-bold">Ma Société</div>
-        <nav className="space-x-4">
-          {links.map(link => (
+    <header className="site-header">
+      <div className="container header-inner">
+        <div className="logo">Gtol</div>
+        <nav className="nav-links">
+          {links.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
               className={({ isActive }) =>
-                isActive ? 'text-blue-600 font-semibold' : 'text-gray-700'
+                isActive ? 'active' : ''
               }
             >
               {link.label}
             </NavLink>
           ))}
+          <a
+            href="https://discord.gg/cruckstore"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="discord-link"
+          >
+            Discord
+          </a>
         </nav>
       </div>
     </header>
