@@ -1,8 +1,11 @@
+import '@/styles/Footer.scss'
+
 export default function Footer() {
-    return (
-      <footer className="bg-gray-100 text-center py-6">
+  return (
+    <footer className="site-footer">
+      <div className="container">
         © {new Date().getFullYear()} Ma Société. Tous droits réservés.
-      </footer>
-    )
-  }
-  
+      </div>
+    </footer>
+  )
+}
