@@ -63,11 +63,6 @@ $white: #fff;
   color: #fff;
 
   transition: transform 0.2s, background-color 0.2s;
-
-  &:hover {
-    animation: arrow-jitter 0.4s ease-in-out forwards;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
 }
 
 @keyframes arrow-jitter {
@@ -89,8 +84,8 @@ $white: #fff;
 }
 
 .home-title--arrow:hover {
-  transform: translateX(4px);
-  color: #fff;
+  animation: arrow-jitter 0.4s ease-in-out forwards;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .home-subtitle {
@@ -123,26 +118,26 @@ $white: #fff;
 }
 
 .btn-outline {
-  background: linear-gradient(180deg,
-      $light-grey -382%,
-      $background 100%);
+  background: linear-gradient(
+    180deg,
+    $light-grey -382%,
+    $background 100%
+  );
   border-radius: 100px;
   opacity: 1;
   will-change: transform;
   text-decoration: underline;
+  color: $white;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0.8rem 2rem;
-  color: $white;
   font-size: 1rem;
-  transition: transform 0.2s;
-  border-radius: 100px;
-  opacity: 1;
-  will-change: transform;
+  transition: transform 0.2s, background 0.2s;
 
   &:hover {
     transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
   }
 }
 
