@@ -15,7 +15,7 @@ export default function Header() {
       <div className="header-inner">
         <div className="logo">
           <div className="logo">
-            <img src={logo} alt="Polo logo" />
+            <img src={logo} alt="Polo logo" width={316} height={100} />
           </div>
         </div>
         <div className="actions">
