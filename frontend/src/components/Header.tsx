@@ -1,29 +1,31 @@
-import { NavLink } from 'react-router-dom'
-import logo from '@/assets/logo.svg'
-import '@/styles/Header.scss'
+import { NavLink } from "react-router-dom";
+import logo from "@/assets/logo.svg";
+import "@/styles/Header.scss";
 
 export default function Header() {
   const links = [
-    { to: '/services', label: 'Services' },
-    { to: '/projects', label: 'Projects' },
-    { to: '/testimonials', label: 'Testimonials' },
-    { to: '/contact', label: 'Contact' },
-  ]
+    { to: "/services", label: "Services" },
+    { to: "/projects", label: "Projects" },
+    { to: "/testimonials", label: "Testimonials" },
+    { to: "/contact", label: "Contact" },
+  ];
 
   return (
     <header className="site-header">
       <div className="header-inner">
         <div className="logo">
-          <img src={logo} alt="Polo logo" width={24} height={24} />
+          <div className="logo">
+            <img src={logo} alt="Polo logo" />
+          </div>
         </div>
         <div className="actions">
           <nav className="nav">
-            {links.map(link => (
+            {links.map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
                 className={({ isActive }) =>
-                  isActive ? 'nav-link active' : 'nav-link'
+                  isActive ? "nav-link active" : "nav-link"
                 }
               >
                 {link.label}
@@ -42,5 +44,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
