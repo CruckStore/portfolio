@@ -8,7 +8,8 @@ export default function Home() {
         <span className="role-badge">UI/UX &amp; Graphic Designer</span>
 
         <h1 className="home-title">
-          Johan <span className="home-title--highlight">Beker</span>
+          Gtol 
+          <span className="home-title--highlight">on top</span>
           <span className="home-title--arrow">→</span>
         </h1>
 
