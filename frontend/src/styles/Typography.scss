@@ -1,0 +1,59 @@
+.framer-ZaPG2 {
+    .framer-styles-preset-wu4ebp:not(.rich-text-wrapper),
+    .framer-styles-preset-wu4ebp.rich-text-wrapper p {
+      --framer-font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+      --framer-font-family-bold: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+      --framer-font-family-bold-italic: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+      --framer-font-family-italic: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+      --framer-font-open-type-features: normal;
+      --framer-font-size: 16px;
+      --framer-font-style: normal;
+      --framer-font-style-bold: normal;
+      --framer-font-style-bold-italic: italic;
+      --framer-font-style-italic: italic;
+      --framer-font-variation-axes: normal;
+      --framer-font-weight: 500;
+      --framer-font-weight-bold: 700;
+      --framer-font-weight-bold-italic: 700;
+      --framer-font-weight-italic: 500;
+      --framer-letter-spacing: 0em;
+      --framer-line-height: 2em;
+      --framer-paragraph-spacing: 20px;
+      --framer-text-alignment: start;
+      --framer-text-color: var(--token-27dab558-c2be-4da2-b3df-e0c399d3b44b, rgba(255, 255, 255, 0.6));
+      --framer-text-decoration: none;
+      --framer-text-stroke-color: initial;
+      --framer-text-stroke-width: initial;
+      --framer-text-transform: none;
+    }
+  
+    p.framer-text,
+    div.framer-text,
+    h1.framer-text,
+    h2.framer-text,
+    h3.framer-text,
+    h4.framer-text,
+    h5.framer-text,
+    h6.framer-text,
+    li.framer-text,
+    ol.framer-text,
+    ul.framer-text,
+    span.framer-text:not([data-text-fill]) {
+      font-family: var(--framer-blockquote-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+      font-style: var(--framer-blockquote-font-style, var(--framer-font-style, normal));
+      font-weight: var(--framer-blockquote-font-weight, var(--framer-font-weight, 400));
+      color: var(--framer-blockquote-text-color, var(--framer-text-color, #000));
+      font-size: calc(var(--framer-blockquote-font-size, var(--framer-font-size, 16px)) * var(--framer-font-size-scale, 1));
+      letter-spacing: var(--framer-blockquote-letter-spacing, var(--framer-letter-spacing, 0));
+      text-transform: var(--framer-blockquote-text-transform, var(--framer-text-transform, none));
+      text-decoration: var(--framer-blockquote-text-decoration, var(--framer-text-decoration, none));
+      line-height: var(--framer-blockquote-line-height, var(--framer-line-height, 1.2em));
+      text-align: var(--framer-blockquote-text-alignment, var(--framer-text-alignment, start));
+      -webkit-text-stroke-width: var(--framer-text-stroke-width, initial);
+      -webkit-text-stroke-color: var(--framer-text-stroke-color, initial);
+      font-feature-settings: var(--framer-font-open-type-features, initial);
+      font-variation-settings: var(--framer-font-variation-axes, normal);
+      text-wrap: var(--framer-text-wrap-override, var(--framer-text-wrap));
+    }
+  }
+  
