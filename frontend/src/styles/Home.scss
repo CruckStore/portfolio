@@ -1,11 +1,12 @@
-$light-grey:   rgb(120, 120, 120);
-$background:   rgb(10, 10, 10);
-$white:        #fff;
+$light-grey: rgb(120, 120, 120);
+$background: rgb(10, 10, 10);
+$white: #fff;
 
 .home-page {
   position: relative;
   padding: 8rem 0;
-  min-height: calc(100vh - 64px); /* header height */
+  min-height: calc(100vh - 64px);
+  /* header height */
   color: #fff;
   overflow: hidden;
 }
@@ -43,10 +44,30 @@ $white:        #fff;
 }
 
 .home-title--arrow {
-  font-size: 2rem;
-  margin-left: 1rem;
-  color: rgba(255, 255, 255, 0.6);
-  transition: transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.25rem;
+
+  background-color: var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10));
+  border-radius: 1000px;
+  box-shadow: inset 0px 2px 0px 0px rgba(184, 180, 180, 0.14);
+
+  transform: rotate(-35deg);
+  opacity: 1;
+
+  font-size: 1.2rem;
+  color: #fff;
+
+  transition: transform 0.2s, background-color 0.2s;
+
+  &:hover {
+    transform: rotate(-35deg) translateX(4px);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .home-title--arrow:hover {
@@ -75,16 +96,18 @@ $white:        #fff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120)) /* {"name":"light grey"} */ -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10)) /* {"name":"Background"} */ 100%);
+  background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))
+    /* {"name":"light grey"} */
+    -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))
+    /* {"name":"Background"} */
+    100%);
   transition: background 0.2s, color 0.2s;
 }
 
 .btn-outline {
-  background: linear-gradient(
-    180deg,
-    $light-grey -382%,
-    $background 100%
-  );
+  background: linear-gradient(180deg,
+      $light-grey -382%,
+      $background 100%);
   border-radius: 100px;
   opacity: 1;
   will-change: transform;
@@ -135,6 +158,7 @@ $white:        #fff;
     margin-bottom: 0.8rem;
     font-style: italic;
   }
+
   .author {
     display: block;
     text-align: right;

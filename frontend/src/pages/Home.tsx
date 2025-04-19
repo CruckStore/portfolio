@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import ArrowIcon from "@/components/ArrowIcon";
 import "@/styles/Home.scss";
 
 export default function Home() {
@@ -7,15 +6,17 @@ export default function Home() {
     <section className="home-page">
       <div className="home-content container">
         <span className="role-badge">UI/UX &amp; Graphic Designer</span>
+
         <h1 className="home-title">
-          Johan
-          <span className="home-title--highlight">Beker</span>
-          <ArrowIcon />
+          Johan <span className="home-title--highlight">Beker</span>
+          <span className="home-title--arrow">→</span>
         </h1>
+
         <p className="home-subtitle">
           I’m a versatile designer specializing in graphic, web, and product
           design to help grow your business. Let’s build something great!
         </p>
+
         <div className="home-buttons">
           <Link to="/projects" className="btn-home btn-outline">
             See All Projects
