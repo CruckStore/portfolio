@@ -32,7 +32,7 @@ export default function Header() {
             ))}
           </nav>
           <a
-            href="https://discord.gg/tonlien"
+            href="https://discord.gg/cruckstore"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-free"
@@ -49,7 +49,7 @@ export default function Header() {
                 </g>
               </svg>
             </span>
-            <span>Get for Free</span>
+            <span>Discord</span>
           </a>
         </div>
     </header>
