@@ -4,7 +4,7 @@ $white: #fff;
 
 .home-page {
   position: relative;
-  padding: 8rem 0;
+  padding: 10.5rem 0;
   min-height: calc(100vh - 64px);
   /* header height */
   color: #fff;
@@ -25,11 +25,11 @@ $white: #fff;
   padding: 0.4rem 1rem;
   border-radius: 16px;
   font-size: 0.9rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .home-title {
-  font-size: 3.5rem;
+  font-size: 72px;
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: 1rem;
@@ -65,8 +65,26 @@ $white: #fff;
   transition: transform 0.2s, background-color 0.2s;
 
   &:hover {
-    transform: rotate(-35deg) translateX(4px);
+    animation: arrow-jitter 0.4s ease-in-out forwards;
     background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes arrow-jitter {
+  0% {
+    transform: rotate(-35deg) translate3d(0, 0, 0);
+  }
+
+  33% {
+    transform: rotate(-35deg) translate3d(0.053625px, -0.0514212px, 0);
+  }
+
+  66% {
+    transform: rotate(-35deg) translate3d(0.0982993px, -0.0942596px, 0);
+  }
+
+  100% {
+    transform: rotate(-35deg) translate3d(0.1031px, -0.0988631px, 0);
   }
 }
 
